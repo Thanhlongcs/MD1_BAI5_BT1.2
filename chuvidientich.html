@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="R">
+<button onclick="areapremeter()">click</button>
+<h1 id="dientich"></h1>
+<h1 id="chuvi"></h1>
+<script>
+    function areapremeter(){
+        let R = +document.getElementById("R").value;
+        console.log("R===",R);
+        let area = (R*R*Math.PI);
+        let premeter = (2*R*Math.PI);
+        document.getElementById("dientich").innerHTML= area;
+        document.getElementById("chuvi").innerHTML= premeter;
+    }
+</script>
+</body>
+</html>
